@@ -11,7 +11,7 @@
     .main-index{
         .section-principal{
             width: 100%;
-            height: 60rem;
+            height: 100%;
             background-image: url("../assets/img/fondo.jpg");
             background-repeat: no-repeat;
             background-position: center;
@@ -26,10 +26,13 @@
                 filter:drop-shadow(0 0 10px #000);
                 font-size: 200%;
             }
-            .conteiner-all{
-                @include grid(left, 100px 100px, 150px 150px 150px 150px, center, 20%);
-                gap: 20%;
-            }
+        }
+    }
+
+    .main-productos{
+        .conteiner-all{
+            @include grid(center, 100px 100px, 150px 150px 150px 150px, center, 20%);
+        
             .conteiner-prod{
                 @include flex(center, center, center, column, 0%);
                 width: 200px;
@@ -48,11 +51,12 @@
                     }
                 }
             }
-        }
+        }   
     }
-    .footer{
-        display: flex;
-        background-color: #000;
+
+    .foo    ter{
+            display: flex;
+            background-color: #000;
         width: 100%;
         height: 65px;
         font-family: "Quicksand", sans-serif;
