@@ -232,3 +232,40 @@ footer {
       align-items: center;
       margin: 2%;
       margin-top: 1.5%; } }
+
+@media (max-width: 375px) {
+  header {
+    padding: 0.2rem 0.1rem; }
+    header .navbar {
+      justify-content: start;
+      gap: 1.25rem;
+      padding: 1%; }
+      header .navbar a {
+        display: flex;
+        align-items: center;
+        text-decoration: none; }
+  .main-index .section-principal {
+    width: 375px;
+    height: 30rem;
+    background-size: 100% 100%;
+    padding-right: 10%; }
+    .main-index .section-principal h1 {
+      width: 280px;
+      height: 460px;
+      padding: 10%;
+      font-size: 140%; }
+  .main-productos .conteiner-all {
+    padding-left: 5%;
+    display: grid;
+    justify-content: left;
+    grid-template-columns: 50px 50px;
+    grid-template-rows: 100px 100px 100px;
+    text-align: center;
+    gap: 43%; }
+    .main-productos .conteiner-all .conteiner-prod {
+      display: flex;
+      flex-direction: column;
+      width: 150px;
+      height: 180px;
+      justify-content: center;
+      text-align: center; } }
