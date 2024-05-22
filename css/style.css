@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
+/**Fuente**/
+/**
+Font Family
+font-family: "Quicksand", sans-serif;
+**/
+header {
+  width: 100%;
+  background-color: #5B594E;
+  font-family: "Quicksand", sans-serif; }
+  header nav .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.25rem;
+    list-style: none;
+    margin: 0%; }
+    header nav .navbar .dim-logo {
+      width: 60px;
+      height: 80px; }
+    header nav .navbar li a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #000; }
+  header .flip-vertical-right {
+    -webkit-animation: flip-vertical-right 5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+    animation: flip-vertical-right 5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both; }
+
+@-webkit-keyframes flip-vertical-right {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0); }
+  100% {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg); } }
+
+@keyframes flip-vertical-right {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0); }
+  100% {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg); } }
+
+.main-index .section-principal {
+  width: 100%;
+  height: 28rem;
+  background-image: url("../assets/img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 270%;
+  font-family: "Quicksand", sans-serif; }
+  .main-index .section-principal h1 {
+    /**mixin**/
+    font-family: "Quicksand", sans-serif;
+    display: flex;
+    height: 500px;
+    width: 700px;
+    align-items: center;
+    color: #ffffff;
+    filter: drop-shadow(0 0 10px #000);
+    padding: 5%;
+    font-size: 200%; }
+
+.main-productos {
+  background-color: #A9A27C;
+  height: 100%;
+  width: 100%;
+  font-family: "Quicksand", sans-serif; }
+  .main-productos .conteiner-all {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px; }
+    .main-productos .conteiner-all .conteiner-prod {
+      display: flex;
+      width: 100%;
+      height: 150px;
+      text-align: left;
+      box-shadow: 1px 1px 5px #414040;
+      border-radius: 10px; }
+      .main-productos .conteiner-all .conteiner-prod div {
+        width: 20%;
+        height: 90%;
+        padding-left: 1%; }
+        .main-productos .conteiner-all .conteiner-prod div img {
+          width: 70%;
+          height: 110%;
+          object-fit: contain; }
+
+.main-suc {
+  background-color: #A9A27C;
+  height: 700px;
+  width: 100%;
+  font-family: "Quicksand", sans-serif; }
+  .main-suc .conteiner-all {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px; }
+    .main-suc .conteiner-all .conteiner-prod {
+      display: flex;
+      width: 100%;
+      height: 150px;
+      text-align: left;
+      box-shadow: 1px 1px 5px #414040;
+      border-radius: 10px; }
+      .main-suc .conteiner-all .conteiner-prod div {
+        width: 20%;
+        height: 90%;
+        padding-left: 1%; }
+        .main-suc .conteiner-all .conteiner-prod div img {
+          width: 70%;
+          height: 110%;
+          object-fit: contain; }
+
+.main-nosotros {
+  background-color: #A9A27C;
+  height: 600px;
+  width: 100%;
+  font-family: "Quicksand", sans-serif; }
+  .main-nosotros .nosotros {
+    width: 100%;
+    height: 570px;
+    display: flex;
+    align-items: center; }
+    .main-nosotros .nosotros div img {
+      width: 100%;
+      height: 100%;
+      border-radius: 100rem; }
+    .main-nosotros .nosotros .nosotros-info {
+      margin: 3%;
+      width: 50%;
+      height: 80%; }
+
+footer {
+  display: flex;
+  background-color: #B6B091;
+  width: 100%;
+  font-family: "Quicksand", sans-serif;
+  justify-content: center; }
+  footer a {
+    text-decoration: none;
+    color: #000;
+    align-items: center;
+    margin: 2%;
+    margin-top: 1.5%; }
+  footer .icon {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%; }
+    footer .icon .tam-gral {
+      width: 28px; }
+    footer .icon .tam-ig {
+      width: 25px; }
+
+@media (max-width: 768px) {
+  header {
+    padding: 0.3rem 0.1rem; }
+    header .navbar {
+      justify-content: start;
+      gap: 1.25rem;
+      padding: 1%; }
+  .main-index .section-principal {
+    width: 100%;
+    height: 60rem;
+    background-image: url("../assets/img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 768px 135%;
+    font-family: "Quicksand", sans-serif; }
+    .main-index .section-principal h1 {
+      font-family: "Quicksand", sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: row;
+      padding: 5%;
+      height: 1000px;
+      width: 500px;
+      color: #ffffff;
+      filter: drop-shadow(0 0 10px #000);
+      font-size: 200%; }
+    .main-index .section-principal .conteiner-all {
+      display: grid;
+      justify-content: left;
+      grid-template-columns: 100px 100px;
+      grid-template-rows: 150px 150px 150px 150px;
+      text-align: center;
+      gap: 20%;
+      gap: 20%; }
+    .main-index .section-principal .conteiner-prod {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      padding: 0%;
+      width: 200px;
+      height: 250px; }
+      .main-index .section-principal .conteiner-prod div {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+        width: 100%;
+        height: 50%; }
+        .main-index .section-principal .conteiner-prod div img {
+          margin-right: 100%;
+          width: 100%;
+          height: 110%;
+          object-fit: contain; }
+  .footer {
+    display: flex;
+    background-color: #000;
+    width: 100%;
+    height: 65px;
+    font-family: "Quicksand", sans-serif;
+    justify-content: start; }
+    .footer a {
+      text-decoration: none;
+      color: #000;
+      align-items: center;
+      margin: 2%;
+      margin-top: 1.5%; } }

@@ -1,0 +1,27 @@
+footer{
+    display: flex;
+    background-color: $color-footer;
+    width: 100%;
+    font-family: $fuente;
+    justify-content: center;
+    a{
+        text-decoration: none;
+        color: #000;   
+        align-items: center;
+        margin: 2%;
+        margin-top: 1.5%;
+    }
+    .icon{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2%;
+        .tam-gral{
+            width: 28px;
+        }
+        .tam-ig{
+            width: 25px;
+        }
+    }
+}

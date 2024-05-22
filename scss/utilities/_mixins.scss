@@ -1,0 +1,17 @@
+@mixin grid($just-cont, $columns, $rows, $text-aling, $gap){
+    display: grid;
+    justify-content: $just-cont;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows ;
+    text-align: $text-aling;
+    gap: $gap;
+}
+
+@mixin flex($items, $just-cont, $text-aling, $direction, $padd){
+    display: flex;
+    align-items: $items;
+    justify-content: $just-cont;
+    text-align: $text-aling;
+    flex-direction: $direction;
+    padding: $padd;
+}
