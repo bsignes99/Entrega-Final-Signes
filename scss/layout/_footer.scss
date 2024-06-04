@@ -3,19 +3,15 @@ footer{
     background-color: $color-footer;
     width: 100%;
     font-family: $fuente;
-    justify-content: center;
     a{
         text-decoration: none;
+        transform: translate(50px);
         color: #000;   
-        align-items: center;
-        margin: 2%;
-        margin-top: 1.5%;
+        margin-top: 2%;
     }
     .icon{
         display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
+        transform: translate(1000px);
         padding: 2%;
         .tam-gral{
             width: 28px;

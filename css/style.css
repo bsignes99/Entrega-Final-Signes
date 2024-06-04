@@ -50,23 +50,22 @@ header {
 
 .main-index .section-principal {
   width: 100%;
-  height: 28rem;
   background-image: url("../assets/img/fondo.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100% 270%;
+  background-size: 100% 240%;
   font-family: "Quicksand", sans-serif; }
   .main-index .section-principal h1 {
-    /**mixin**/
     font-family: "Quicksand", sans-serif;
     display: flex;
-    height: 500px;
-    width: 700px;
+    flex-direction: row;
+    height: 600px;
+    width: 600px;
     align-items: center;
     color: #ffffff;
     filter: drop-shadow(0 0 10px #000);
     padding: 5%;
-    font-size: 200%; }
+    font-size: 250%; }
 
 .main-productos {
   background-color: #A9A27C;
@@ -74,6 +73,7 @@ header {
   width: 100%;
   font-family: "Quicksand", sans-serif; }
   .main-productos .conteiner-all {
+    width: 70%;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -86,14 +86,56 @@ header {
       text-align: left;
       box-shadow: 1px 1px 5px #414040;
       border-radius: 10px; }
+      .main-productos .conteiner-all .conteiner-prod h2 {
+        width: 200%; }
       .main-productos .conteiner-all .conteiner-prod div {
-        width: 20%;
+        width: 30%;
         height: 90%;
         padding-left: 1%; }
         .main-productos .conteiner-all .conteiner-prod div img {
           width: 70%;
           height: 110%;
           object-fit: contain; }
+
+.comprar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20%;
+  height: 300px;
+  text-align: center;
+  box-shadow: 3px 3px 7px #414040;
+  border-radius: 10px;
+  transform: translateY(-750px) translate(1100px); }
+  .comprar div {
+    width: 30%;
+    height: 90%;
+    padding-left: 1%; }
+
+.comprar-acc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  height: 300px;
+  text-align: center;
+  box-shadow: 3px 3px 7px #414040;
+  border-radius: 10px;
+  transform: translateY(-400px) translate(1100px);
+  font-size: 20px; }
+  .comprar-acc div {
+    width: 20%;
+    height: 70%;
+    padding-left: 1%; }
+
+.galeria {
+  width: 80%;
+  height: 90%;
+  transform: translateY(-270px) translate(150px); }
+  .galeria img {
+    width: 20%;
+    height: 30%;
+    transform: translate(460px); }
 
 .main-suc {
   background-color: #A9A27C;
@@ -137,6 +179,7 @@ header {
       height: 100%;
       border-radius: 100rem; }
     .main-nosotros .nosotros .nosotros-info {
+      padding-top: 10%;
       margin: 3%;
       width: 50%;
       height: 80%; }
@@ -145,19 +188,15 @@ footer {
   display: flex;
   background-color: #B6B091;
   width: 100%;
-  font-family: "Quicksand", sans-serif;
-  justify-content: center; }
+  font-family: "Quicksand", sans-serif; }
   footer a {
     text-decoration: none;
+    transform: translate(50px);
     color: #000;
-    align-items: center;
-    margin: 2%;
-    margin-top: 1.5%; }
+    margin-top: 2%; }
   footer .icon {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
+    transform: translate(1000px);
     padding: 2%; }
     footer .icon .tam-gral {
       width: 28px; }
@@ -166,7 +205,7 @@ footer {
 
 @media (max-width: 768px) {
   header {
-    padding: 0.3rem 0.1rem; }
+    width: 100%; }
     header .navbar {
       justify-content: start;
       gap: 1.25rem;
@@ -177,10 +216,11 @@ footer {
     background-image: url("../assets/img/fondo.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 768px 135%;
+    background-size: 1068px 200%;
     font-family: "Quicksand", sans-serif; }
     .main-index .section-principal h1 {
       font-family: "Quicksand", sans-serif;
+      transform: translate(130px);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -192,80 +232,184 @@ footer {
       color: #ffffff;
       filter: drop-shadow(0 0 10px #000);
       font-size: 200%; }
-  .main-productos .conteiner-all {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 100px 100px;
-    grid-template-rows: 150px 150px 150px 150px;
-    text-align: center;
-    gap: 20%; }
-    .main-productos .conteiner-all .conteiner-prod {
-      display: flex;
-      align-items: center;
+  .main-productos {
+    height: 1500px; }
+    .main-productos .conteiner-all {
+      display: grid;
       justify-content: center;
+      grid-template-columns: 100px 100px;
+      grid-template-rows: 150px 150px 150px;
       text-align: center;
-      flex-direction: column;
-      padding: 0%;
-      width: 200px;
-      height: 250px; }
-      .main-productos .conteiner-all .conteiner-prod div {
+      gap: 45%; }
+      .main-productos .conteiner-all .conteiner-prod {
         display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
         flex-direction: column;
-        margin-top: 5%;
-        width: 100%;
-        height: 50%; }
-        .main-productos .conteiner-all .conteiner-prod div img {
-          margin-right: 100%;
+        padding: 0%;
+        width: 300px;
+        height: 350px; }
+        .main-productos .conteiner-all .conteiner-prod div {
+          display: flex;
+          flex-direction: column;
+          margin-top: 5%;
           width: 100%;
-          height: 110%;
-          object-fit: contain; }
-  .foo ter {
+          height: 50%; }
+          .main-productos .conteiner-all .conteiner-prod div h2 {
+            width: 100%;
+            transform: translateY(10px); }
+          .main-productos .conteiner-all .conteiner-prod div img {
+            margin-right: 100%;
+            width: 100%;
+            height: 110%;
+            object-fit: contain; }
+  .comprar {
+    width: 40%;
+    height: 350px;
+    transform: translateY(2px) translate(2px);
+    box-shadow: 1px 1px 5px #414040; }
+    .comprar p {
+      width: 80%;
+      transform: translate(30px);
+      font-size: 18px; }
+    .comprar h2 {
+      transform: translateY(-30px); }
+    .comprar div {
+      width: 30%;
+      height: 100%;
+      padding-left: 1%; }
+  .galeria {
+    width: 80%;
+    height: 90%;
+    transform: translateY(400px) translate(70px); }
+    .galeria img {
+      width: 40%;
+      height: 50%;
+      transform: translate(190px); }
+  .comprar-acc {
+    width: 300%;
+    height: 350px;
+    transform: translateY(5px) translate(2px);
+    box-shadow: 1px 1px 5px #414040; }
+    .comprar-acc p {
+      width: 80%;
+      transform: translate(30px);
+      font-size: 18px; }
+    .comprar-acc h2 {
+      transform: translateY(-30px); }
+    .comprar-acc div {
+      width: 30%;
+      height: 100%;
+      padding-left: 1%; }
+  .main-nosotros .nosotros .nosotros-info h2 {
+    padding-top: 30%; }
+  footer {
     display: flex;
-    background-color: #000;
     width: 100%;
     height: 65px;
-    font-family: "Quicksand", sans-serif;
-    justify-content: start; }
-    .foo ter a {
+    font-family: "Quicksand", sans-serif; }
+    footer a {
       text-decoration: none;
       color: #000;
       align-items: center;
-      margin: 2%;
-      margin-top: 1.5%; } }
+      margin-top: 2%; }
+    footer .icon {
+      transform: translate(400px); } }
 
-@media (max-width: 375px) {
+@media (max-width: 320px) {
   header {
-    padding: 0.2rem 0.1rem; }
+    justify-items: start;
+    width: 100%; }
     header .navbar {
+      display: flex;
       justify-content: start;
+      align-items: start;
       gap: 1.25rem;
-      padding: 1%; }
-      header .navbar a {
+      list-style: none;
+      margin: 0%;
+      font-size: 10px; }
+      header .navbar .dim-logo {
+        width: 60px;
+        height: 80px; }
+      header .navbar li a {
         display: flex;
         align-items: center;
-        text-decoration: none; }
+        text-decoration: none;
+        color: #000; }
   .main-index .section-principal {
-    width: 375px;
+    justify-items: start;
+    width: 320px;
     height: 30rem;
-    background-size: 100% 100%;
-    padding-right: 10%; }
+    background-size: 100% 100%; }
     .main-index .section-principal h1 {
+      transform: translate(15px);
       width: 280px;
       height: 460px;
-      padding: 10%;
-      font-size: 140%; }
-  .main-productos .conteiner-all {
-    padding-left: 5%;
-    display: grid;
-    justify-content: left;
-    grid-template-columns: 50px 50px;
-    grid-template-rows: 100px 100px 100px;
-    text-align: center;
-    gap: 43%; }
-    .main-productos .conteiner-all .conteiner-prod {
+      font-size: 120%; }
+  .main-productos {
+    height: 2500px; }
+    .main-productos .conteiner-all {
+      padding-left: 25px;
+      display: grid;
+      justify-content: left;
+      grid-template-columns: 50px;
+      grid-template-rows: 90px 90px 90px 90px;
+      text-align: center;
+      gap: 42%; }
+      .main-productos .conteiner-all .conteiner-prod {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        height: 400px;
+        justify-content: center;
+        text-align: center; }
+  .comprar {
+    width: 80%;
+    height: 350px;
+    transform: translateY(1280px) translate(25px);
+    box-shadow: 1px 1px 5px #414040; }
+    .comprar p {
+      width: 80%;
+      transform: translate(30px);
+      font-size: 18px; }
+    .comprar h2 {
+      transform: translateY(-30px); }
+    .comprar div {
+      width: 30%;
+      height: 100%;
+      padding-left: 1%; }
+  /**FALTA ACCESORIOSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
+  .main-nosotros {
+    width: 100%;
+    height: 100%; }
+    .main-nosotros .nosotros {
       display: flex;
-      flex-direction: column;
-      width: 150px;
-      height: 180px;
-      justify-content: center;
-      text-align: center; } }
+      flex-direction: column; }
+      .main-nosotros .nosotros .div-img {
+        padding-top: 5%;
+        width: 80%;
+        height: 40%; }
+      .main-nosotros .nosotros .nosotros-info h2 {
+        width: 10%;
+        padding-top: 0px; }
+      .main-nosotros .nosotros .nosotros-info p {
+        font-size: 60%;
+        width: 100%; }
+  footer {
+    width: 100%;
+    height: 55px;
+    font-family: "Quicksand", sans-serif;
+    padding: 3%; }
+    footer a {
+      text-decoration: none;
+      font-size: 14px;
+      color: #000;
+      margin-top: 2%;
+      transform: translate(10px); }
+    footer .icon {
+      transform: translate(90px); }
+      footer .icon .tam-ig {
+        width: 15px; }
+      footer .icon .tam-gral {
+        width: 17px; } }

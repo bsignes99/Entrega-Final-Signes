@@ -1,48 +1,136 @@
-@media(max-width: 375px){
+@media(max-width: 320px){
     header{
-        padding: 0.2rem 0.1rem;
+        justify-items: start;
+        width: 100%;
         .navbar{
-            justify-content: start;
+            display: flex;
+            justify-content:start;
+            align-items: start;
             gap: 1.25rem;
-            padding: 1%;
-            a{
-                display: flex;
-                align-items: center;    
-                text-decoration: none;
+            list-style: none;  
+            margin: 0%;  
+            font-size: 10px;       
+            .dim-logo{
+                width: 60px;
+                height: 80px;
+            }
+            li{
+                a{
+                    display: flex;
+                    align-items: center;    
+                    text-decoration: none;
+                    color: #000;
+                }
             }
         }
     }
+    
     .main-index{
         .section-principal{
-            width: 375px;
+            justify-items: start;
+            width: 320px;
             height: 30rem;
             background-size: 100% 100%;
-            padding-right: 10%;
             h1{
+                transform: translate(15px);
                 width: 280px;
                 height: 460px;
-                padding: 10%;
-                font-size: 140%;
+                font-size: 120%;
             }
         }
     }
 
     .main-productos{
+        height: 2500px;
         .conteiner-all{
-            padding-left: 5%;
+            padding-left: 25px;
             display: grid;
             justify-content: left;
-            grid-template-columns: 50px 50px;
-            grid-template-rows: 100px 100px 100px;
+            grid-template-columns: 50px;
+            grid-template-rows: 90px 90px 90px 90px;
             text-align: center;
-            gap: 43%;
+            gap: 42%;
             .conteiner-prod{
                 display: flex;
                 flex-direction: column;
-                width: 150px;
-                height: 180px;
+                width: 250px;
+                height: 400px;
                 justify-content: center;
                 text-align: center;
+            }
+        }
+    }
+
+
+    .comprar{
+        width: 80%;
+        height: 350px;
+        transform:  translateY(1280px ) translate(25px);
+        box-shadow: 1px 1px 5px rgb(65, 64, 64);
+
+        p{
+            width: 80%;
+            transform: translate(30px);
+            font-size: 18px;
+        }
+        h2{
+            transform: translateY(-30px);
+        }
+        div{
+            width: 30%;
+            height: 100%;
+            padding-left: 1%;
+        }
+    }
+
+    /**FALTA ACCESORIOSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
+
+
+
+    .main-nosotros{
+        width: 100%;
+        height: 100%;
+        .nosotros{
+            display: flex;
+            flex-direction: column;
+            .div-img{
+                padding-top: 5%;
+                width: 80%;
+                height: 40%;
+
+            }
+            .nosotros-info{
+                h2{
+                    width: 10%;
+                    padding-top: 0px;
+                }
+                p{
+                    font-size: 60%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    footer{
+        width: 100%;
+        height: 55px;
+        font-family: "Quicksand", sans-serif;
+        padding: 3%;
+        a{
+            text-decoration: none;
+            font-size: 14px;
+            color: #000;   
+            margin-top: 2%;  
+            transform: translate(10px);
+        }
+        .icon{
+            transform: translate(90px);
+            .tam-ig{
+                width: 15px;
+            }
+            .tam-gral{
+                width: 17px;
             }
         }
     }
