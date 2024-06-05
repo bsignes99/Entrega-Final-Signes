@@ -1,9 +1,19 @@
 .main-suc{
     background-color:$color-principal;
-    height: 700px;
+    height: 1000px;
     width: 100%;
     font-family: $fuente;
+    h1{
+        width: 100%;
+        transform: translate(400px) translateY(10px);
+    }
+    p{
+        width: 70%;
+        transform: translate(200px) translateY(14px);
+        font-size: 20px;
+    }
     .conteiner-all{
+        transform: translateY(30px);
         padding: 15px;
         display: flex;
         flex-direction: column;
@@ -11,21 +21,29 @@
         gap: 50px;
         .conteiner-prod{
             display: flex;
-            width: 100%;
+            width: 70%;
             height: 150px;
             text-align: left;
             box-shadow: 1px 1px 5px rgb(65, 64, 64);
             border-radius: 10px;
             div{
-                width: 20%;
+                width: 30%;
                 height: 90%;
                 padding-left: 1%;
+                p{
+                    transform: translate(0px) translateY(0px);
+                }
                 img{
                     width: 70%;
                     height: 110%;
                     object-fit: contain;
                 }
             }
+        }
+        .conteiner-prod-rigth{
+            @extend .conteiner-prod;
+            width: 70%;
+            transform: translate(300px);
         }
     }
 }

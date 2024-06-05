@@ -112,6 +112,26 @@
             padding-left: 1%;
         }
     }
+
+    .main-suc{
+        height: 1000px;
+        width: 100%;
+        h1{
+            width: 100%;
+            transform: translate(100px) translateY(10px);
+        }
+        p{
+            width: 80%;
+            transform: translate(100px) translateY(14px);
+            font-size: 20px;
+        }
+        .conteiner-all{
+            .conteiner-prod-rigth{
+                width: 70%;
+                transform: translate(200px);
+            }
+        }
+    }
     
     .main-nosotros{
         .nosotros{
