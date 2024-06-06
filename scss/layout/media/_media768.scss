@@ -33,7 +33,7 @@
     .main-productos{
         height: 1500px;
         .conteiner-all{
-            @include grid(center, 100px 100px, 150px 150px 150px, center, 45%);
+            @include grid(center, 100px 100px, 150px 150px 150px, center, 48%);
         
             .conteiner-prod{
                 @include flex(center, center, center, column, 0%);
@@ -49,6 +49,13 @@
                         width: 100%;
                         transform: translateY(10px);
                     }
+                    p{
+                        transform: translateY(5px);
+                    }
+                    h5{
+                        transform: translateY(5px);
+
+                    }
                     img{
                         margin-right: 100%;
                         width: 100%;
@@ -63,7 +70,7 @@
     .comprar{
         width: 40%;
         height: 350px;
-        transform:  translateY(2px ) translate(2px);
+        transform:  translateY(269px ) translate(385px);
         box-shadow: 1px 1px 5px rgb(65, 64, 64);
 
         p{
